@@ -5,7 +5,6 @@ class Header extends Component {
   onClickLogout = () => {
     console.log('logout')
   }
-
   render() {
     return (
       <div className="header-con">
