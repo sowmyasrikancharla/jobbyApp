@@ -1,0 +1,8 @@
+.job-item-con {
+  height: 350px;
+  width: 100%;
+  margin: 10px;
+  background-color: #202020;
+  border-radius: 20px;
+  list-style-type: none;
+}

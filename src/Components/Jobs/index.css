@@ -1,0 +1,33 @@
+.jobs-bg-con {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+  padding: 10px;
+  display: flex;
+}
+.profile-jobs-filtering-left-con {
+  padding: 20px;
+}
+.checkbox {
+  height: 25px;
+  width: 25px;
+  margin-left: 0px;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.label-text {
+  color: #ffffff;
+  font-family: itallic;
+  font-size: 22px;
+  font-weight: 100;
+}
+.filter-group-heading {
+  color: #ffffff;
+  font-family: itallic;
+  font-size: 26px;
+  font-weight: 100;
+}
+.jobs-display-right-con {
+  padding: 20px;
+}

@@ -1,5 +1,6 @@
 import {Component} from 'react'
-import Cookies from 'js-cookie'
+import {Redirect} from 'react-router-dom'
+import Cookie from 'js-cookie'
 import './index.css'
 
 class Login extends Component {
@@ -15,7 +16,7 @@ class Login extends Component {
 
   onSubmitSuccess = jwtToken => {
     const {history} = this.props
-    Cookies.set('jwt_token', jwtToken, {
+    Cookie.set('jwt_token', jwtToken, {
       expires: 30,
       path: '/',
     })
@@ -43,6 +44,10 @@ class Login extends Component {
 
   render() {
     const {userName, password, isError, errorMsg} = this.state
+    const token = Cookie.get('jwt_token')
+    if (token !== undefined) {
+      return <Redirect to="/" />
+    }
     return (
       <div className="login-background-container">
         <div className="login-contents-container">
