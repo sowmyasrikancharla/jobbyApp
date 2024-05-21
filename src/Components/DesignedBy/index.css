@@ -6,8 +6,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-color: #6efaf3;
-  border-style: groove;
 }
 .my-heading {
   font-size: 40px;
