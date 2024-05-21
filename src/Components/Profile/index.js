@@ -56,7 +56,7 @@ class Profile extends Component {
     return (
       <div className="profile-con">
         <img src={profileImageUrl} alt="profile" className="profile-icon" />
-        <p className="name">{name}</p>
+        <h1 className="name">{name}</h1>
         <p className="profile-description">{shortBio}</p>
       </div>
     )

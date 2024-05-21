@@ -25,6 +25,7 @@
   padding: 5px;
   justify-content: center;
   line-height: 10px;
+  background-repeat: no-repeat;
 }
 .retry-button {
   padding: 15px;

@@ -53,25 +53,25 @@ class Login extends Component {
         <div className="login-contents-container">
           <img
             src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-            alt="logo"
+            alt="website logo"
             className="website-logo"
           />
           <form className="login-form" onSubmit={this.onSubmitCredentials}>
-            <label htmlFor="Username" className="label-text">
+            <label htmlFor="USERNAME" className="label-text">
               USERNAME
             </label>
             <input
               type="text"
               className="input-container"
               placeholder="Username"
-              id="Username"
+              id="USERNAME"
               onChange={this.onChangeUsername}
             />
             <label htmlFor="Password" className="label-text">
               PASSWORD
             </label>
             <input
-              type="text"
+              type="password"
               className="input-container"
               placeholder="Password"
               id="Password"

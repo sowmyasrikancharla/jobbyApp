@@ -9,36 +9,30 @@ const Header = props => {
     Cookies.remove('jwt_token')
     history.replace('/login')
   }
-<<<<<<< HEAD
   return (
     <div className="header-con">
-      <img
-        src="https://assets.ccbp.in/frontend/react-js/logo-img.png "
-        alt="website logo"
-        className="website-logo-header"
-      />
-      <div className="home-jobs-con">
-        <p className="header-nav-text">Home</p>
-        <Link to="/jobs" className="link">
-          {' '}
-=======
-  render() {
-    return (
-      <div className="header-con">
+      <Link to="/" className="website-logo-header">
         <img
           src="https://assets.ccbp.in/frontend/react-js/logo-img.png "
           alt="website logo"
-          className="website-logo-header"
         />
-        <div className="home-jobs-con">
-          <p className="header-nav-text">Home</p>
->>>>>>> 463fb383c80224163f2ab9733776df5d21a04d33
-          <p className="header-nav-text">Jobs</p>
+      </Link>
+      <ul className="home-jobs-con">
+        <Link to="/" className="link">
+          <li className="header-nav-text">Home</li>
         </Link>
-      </div>
-      <button className="logout-button" onClick={onClickLogout}>
-        Logout
-      </button>
+        <Link to="/jobs" className="link">
+          <li className="header-nav-text">Jobs</li>
+        </Link>
+        <Link to="/designed-by" className="link">
+          <li className="header-nav-text">Designed By</li>
+        </Link>
+      </ul>
+      <li className="logout-button">
+        <button className="logout-button" onClick={onClickLogout}>
+          Logout
+        </button>
+      </li>
     </div>
   )
 }

@@ -3,6 +3,7 @@
   padding: 15px;
   display: flex;
   justify-content: space-between;
+  height: 14vh;
 }
 .website-logo-header {
   height: 8vh;
@@ -16,6 +17,8 @@
   font-family: itallic;
   margin-left: 10px;
   margin-right: 10px;
+  list-style-type: none;
+  font-size: 20px;
 }
 .logout-button {
   padding: 10px;
@@ -26,7 +29,7 @@
   font-size: 18px;
   font-family: itallic;
   font-weight: bold;
-  width: 10%;
+  list-style-type: none;
 }
 .link {
   text-decoration: none;
